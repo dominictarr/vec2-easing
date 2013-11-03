@@ -24,13 +24,14 @@ module.exports = function (vec, duration, fr) {
   var _t = Date.now(), t = _t
 
   var int
+  var d = new Vec2()
   _vec.change(function () {
     if(int) {
       clearInterval(int)
       int = null
     }
     var start = Date.now()
-    var d = _vec.subtract(vec, true)
+    d.set(_vec).subtract(vec)
     var x = vec.x, y = vec.y
     //TODO: use requestAnimitaionFrame where available?
     int = setInterval(function () {
