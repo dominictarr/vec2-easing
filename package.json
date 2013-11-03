@@ -1,7 +1,7 @@
 {
   "name": "vec2-easing",
-  "description": "",
-  "version": "1.0.0",
+  "description": "animate vec2 with quadratic easing",
+  "version": "1.0.1",
   "homepage": "https://github.com/dominictarr/vec2-easing",
   "repository": {
     "type": "git",
